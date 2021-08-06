@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    outline: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: radial-gradient(at top, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    min-height: 100vh;
+    background-size: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main h1 {
+    padding: 20px 0;
+    font-size: 54px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.main .todo-form {
+    padding-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.main .todo-form .todo-input {
+    width: 350px;
+    padding: 10px 20px;
+    background-color: rgba(224, 222, 221, 0.3);
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin-right: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main .todo-form .todo-input::placeholder {
+    color: #BDBDBD;
+}
+
+.main .todo-form .todo-btn {
+    padding: 10px 30px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: rgba(224, 222, 221, 0.3);
+}
+
+.main .task {
+    display: flex;
+    padding: 10px 0;
+    min-width: 529px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main .task p {
+    margin-right: 10px
+}
+
+.main .delete-btn {
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: rgba(224, 222, 221, 0.3);
 }
